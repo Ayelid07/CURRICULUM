@@ -1,5 +1,6 @@
 body{
     background-color: beige;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 img{
@@ -24,4 +25,33 @@ input{
 #contraseña{ /*id*/
     background-color: aquamarine; /*color de fondo*/
     color: coral; /*color de la letra*/
+}
+
+form{
+    background-color: white;
+    border-radius: 3px;
+    padding: 15px;
+    font-size: 12px;
+    margin: 0 auto;
+    width: 320px;
+}
+
+input{
+    border: 0;
+    outline: none;
+    width: 280px;
+}
+.fiel{
+    border: solid 1px;
+    padding: 10px;
+    width: 280px;
+}
+
+.fielb:focus{
+    border-color:aquamarine;
+    
+}
+
+.center-conter{
+    text-align: center;
 }

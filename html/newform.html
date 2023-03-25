@@ -9,24 +9,63 @@
 </head>
 <body>
     <form name="formulario" method="post" action="/send.php">
-        <a href="../index.html">REGRESAR A LA PAGINA PRINCIPAL</a>
-        <input type="text" value="Ayelid" disabled class="inputcolor">
-        <input type="text" value="Arévalo Quintero" readonly class="inputcolor">
-        <input type="text" placeholder="Escriba su nombre" required class="inputcolor" autocomplete="off">
-        <input type="password" name="" id="contraseña" autocomplete="off"> 
-        <input type="text" name="" id="" maxlength="10" minlength="10" >
-        <input type="file" name="" id="">
-        <input type="color" name="" id="">
-        <input type="range" min="0" max="5" step="1" value=""> 
-        <input type="date" name="" id="">
-        <input type="email" name="" id="" >
-        <input type="month" name="" id="">
+        <fieldset>
+        <legend>Datos personales</legend>
+        <input type="text" class="field" value="Ayelid" disabled class="inputcolor">
         <br><br>
+        <input type="text" class="field" value="Arévalo Quintero" readonly class="inputcolor">
+        <br>
+        <p>Nombre</p>
+        <input type="text" class="field" placeholder="Escriba su nombre" required class="inputcolor" autocomplete="off">
+        <br>
+        <p>Contraseña</p>
+        <input type="password" class="field" placeholder="Escriba su contraseña" name="" id="contraseña" autocomplete="off">  
+        <br>
+        <p>Telefono</p>
+        <input type="text" class="field" placeholder="Ingrese su número" name="" id="" maxlength="10" minlength="10" >
+        <br>
+        <p>Documento</p>
+        <input type="file" class="field"  name="" id="">
+        <br>
+        <p>Color</p>
+        <input type="color" class="field" name="" id="">
+        <br><br>
+        <input type="range" class="field" min="0" max="5" step="1" value=""> 
+        <br>
+        <p>Fecha</p>
+        <input type="date" class="field" name="" id="">
+        <br>  
+        <p>Correo Electronico</p>
+        <input type="email" class="field"  name="" id="" >
+        <br>
+        <p>Mes</p>
+        <input type="month" class="field" name="" id="">
+        <br>
+        <p>Sexo</p>
         <label for="sexo">Sexo:</label>
+        <br><br>
         <label for="Hombre">Masculino</label>
+        <br><br>
         <input type="radio" name="sexo" id="Hombre" value="H">
+        <br><br>
         <label for="Mujer">Femenino</label>
+        <br><br>
         <input type="radio" name="sexo" id="Mujer" value="M">
+        <br>
+        <p>Vivienda</p>
+        <select name="combo">
+            <option value="1" selected>Seleccione el lugar donde vive</option>
+            <option value="2" >OCAÑA</option> 
+            <option value="3">ABREGO</option>
+            <option value="4">LA PLAYA</option>
+          </select>
+          <br>
+          <p class="center-content"></p>
+          <input type="submit" class="btn btn-green" value="Enviar formulario" />
+          <br><br>
+          <a href="../index.html">REGRESAR A LA PAGINA PRINCIPAL</a>
+        </fieldset>
+        
     </form>
 </body>
 </html>
