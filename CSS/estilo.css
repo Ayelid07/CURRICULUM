@@ -46,6 +46,7 @@ nav {
 .enlaces-header {
     font-weight: 300;
     margin: auto;
+    transition: all ease-in-out .6s;
 }
 
 .nav .enlaces-header a {
@@ -325,8 +326,44 @@ footer{
 }
 
 /*###### BREAKPOINTS ######*/
+@media screen and (max-width: 900px){
+    .contenido-header > img {
+        width: 150px;
+        height: 170px;
+        animation: ease-in animacion 0.5s;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    .contenido-header{
+        width: 100%;
+        height: 400px;
+    }
+
+    .certificado{
+        width: 45%;
+    }
+
+    /*footer*/
+
+    .partFooter{
+        width: 80%;
+    }
+
+    .partFooter img{
+        display: none;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+}
 
 @media screen and (max-width: 700px){
+    /*Barra de menu hamburgesa*/
     .hamburguer{
         display: block;
     }
@@ -363,5 +400,48 @@ footer{
         background-color: #fff;
     }
 
+    /*La visual principal*/
+
+    h1{
+        font-size: 25px;
+    }
+
+    .contenido-header{
+        width: 100%;
+        height: 580px;
+        display: block;
+
+    }
+
+    .contenido-header > img {
+        width: 120px;
+        height: 120px;
+        animation: ease-in 0.5s;
+        margin-top: 20px;
+    }
+
+    .contenido-header > img, .textos-header {
+        margin-left: 0px;
+    }
+
+    /*Section education*/
+    .education, .certificado{
+        width: 80%;
+        margin-bottom: 15px;
+    }
+
+    .certificado img {
+        height: 130px;
+    }
+
+    /*footer*/
+    .partFooter img{
+        display: none;
+    }
+
+    footer {
+        padding: 0px;
+    }
 
 }
+    
